@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html class="full-height" lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    
+    <title>Single Cell Explorer</title>    
+    {% include  "common/libx1.html"  %}
+    <style type="text/css">
+      
+      th { font-size: 12px; }
+      td { font-size: 11px; }
+
+    </style>
+  </head>
+
+
+
+  <body>
+
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-light static-top">
+       
+        <a class="navbar-brand" href="/">Single Cell Explorer</a>
+        <span style='width: 60px;'></span>
+        <ul class="navbar-nav" name='applinks'>
+          <li class="nav-item" style='cursor: pointer;'>
+            <a class="nav-link" name='linktosamples' href="/">Index</a>
+          </li>
+          <li class="nav-item" style='cursor: pointer;'>
+            <a class="nav-link" name='linktoplot' href="/plots">Plot</a>
+          </li>
+          <!--li class="nav-item" style='cursor: pointer;'>
+            <a class="nav-link" name='linktoML' href="/neuralNetwork">Neural Network</a>
+          </li-->
+          <li class="nav-item" style='cursor: pointer;'>
+            <a class="nav-link active" name='linktoadmin' href="/administration">Admin</a>
+          </li>
+          <!--li class="nav-item" style='cursor: pointer;'>
+            <a class="nav-link" name='linktoContrast' href="/contrast">Contrast</a>
+          </li-->
+        </ul>
+         
+      
+
+
+    </nav>
+
+
+    
+    <!--div style="height: 13px;"></div-->
+    
+    <!--div class="container-fluid" style="height: calc(100% - 87px);"-->
+    <div class="container-fluid" style="height: calc(100% );">
+      <div class='row h-100' style="min-height: 340px;">
+
+      
+            <div class='col-12 h-100'>
+              <div class='card h-100' id='mainpanel'>
+                   
+                  
+
+              </div>
+            </div>
+ 
+ 
+
+    </div>
+
+
+
+
+    <div id='loadingcanvas' style="position: fixed;width: 100%;height: 100%;left:0;top:0;background :rgba(192, 192, 192, .6);z-index:9999999;display: none;" >
+        <div class="h-100" style="display: flex;justify-content: center;align-items: center;vertical-align: middle;">
+            <div class="loader">
+                  <div class="dot dot1"><i></i></div>
+                  <div class="dot dot2"><i></i></div>
+                  <div class="dot dot3"><i></i></div>
+                  <div class="dot dot4"><i></i></div>
+                  <div class="dot dot5"><i></i></div>
+                  <div class="dot dot6"><i></i></div>
+                  <div class="dot dot7"><i></i></div>
+                  <div class="dot dot8"><i></i></div>
+                  <div class="dot dot9"><i></i></div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <div class="modal" id="defaultModal" tabindex="-1" role="dialog" aria-hidden="true"  > 
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" >
+          <div class="modal-header">
+            <h5 class="modal-title"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" >
+              
+              
+          </div>
+          <div class="modal-footer">
+             
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--div id='tooltip'></div-->    
+  
+    <script type="text/javascript">
+
+      //$("#LoadingModal").modal({backdrop: 'static', keyboard: false});
+      //$("#LoadingModal").modal({backdrop: 'static',
+
+      $(function() {
+          //index model display
+          //$('#sampleListModal').modal("show"); 
+          renderSamleList()
+
+          function renderSamleList(){
+
+            startLoading2();
+
+            $.ajax({
+
+                url:"/getSampleLists",
+                data:{"userid":"userid"},
+                method:'post',
+                dataType:"JSON",
+                success:function(data){
+                  endLoading2();
+                  var samples = data.samples;
+                  //console.log(JSON.stringify(samples))
+                  var samples2 =[];
+                  
+                  for(var i in samples){
+
+                      var sp = samples[i];
+                      var cid =sp["_id"]
+
+                      var tissue= sp["tissue"];
+                      var disease= sp["disease"];
+                      var subjid= sp["subjectid"];
+                      var source =sp["source"];
+                      var study = sp["study"];
+                      var name = sp["name"];
+
+                     
+                  } 
+
+                  $("#mainpanel").html("<div style='overflow-y:auto;'><div name='diseaseinfo'></div><br><table id='sampleinfotable' class='display' style='width:100%;'></table> </div>");
+
+                  
+                   var sampelsdatatable = $("#sampleinfotable").DataTable({
+                      "searching": false,
+                      "paging":false,
+                      "info": false,
+                      "order": [[ 0, 'desc' ], [ 1, 'asc' ]],
+                      "columns": [ 
+                          { "data": "source","title":"Source" },
+                          { "data": "name","title": "MapName"  },
+                          { "data": "subjectid","title": "Subject id"},
+                          
+                          { "data": "disease","title": "Disease"  },
+                          { "data": "study","title": "Study"  },
+                          { "data": "tissue","title": "Sample"  },
+                          { "data": "_id","title": "Action"  },
+                      ],
+                      "columnDefs": [ {
+
+                        "targets": 6,
+                        "render": function ( data, type, row, meta ) {
+
+                            var btnstr="<a class='btn btn-sm btn-primary' style='color:white;' name='deletebtn' value='"+data+"' >Delete</a>";
+                            btnstr+="&nbsp;&nbsp;<a class='btn btn-sm btn-warning' style='color:white;' name='editbtn' value='"+data+"' >Edit</a>";
+                            btnstr+="&nbsp;&nbsp;<a class='btn btn-sm btn-info' style='color:white;' name='viewbtn' value='"+data+"' >View</a>";
+                            return btnstr;
+                          }
+                      }],
+
+                      data:samples
+
+
+                  })
+
+
+                   $("#sampleinfotable").on("click","[name='viewbtn']",function(){
+
+                        var sampleObjectId= $(this).attr("value");
+                        window.open("/map/"+sampleObjectId+"/");
+
+                   })
+
+                   $("#sampleinfotable").on("click","[name='editbtn']",function(){
+
+                        var sampleObjectId= $(this).attr("value");
+                        //get this line data;
+                        var tr = $(this).parent().closest("tr");
+                        var data = sampelsdatatable.row( tr ).data();
+                        
+                        $("#defaultModal").find(".modal-title").html("");
+                        $("#defaultModal").find(".modal-body").html("");
+
+                        var renderstr="<div id='updateform' mapid='"+data["_id"]+"'>"
+
+                        renderstr+="<div><label>Map Name:</label><input type='text' updateval='name' class='form-control' value='"+data["name"]+"'></div>";
+
+                        renderstr+="<div><label>Source:</label><input type='text' updateval='source' class='form-control' value='"+data["source"]+"'></div>";
+                        renderstr+="<div><label>Study:</label><input type='text' updateval='study' class='form-control' value='"+data["study"]+"'></div>";
+
+
+
+                        renderstr+="<div><label>Disease:</label><input type='text' updateval='disease' class='form-control' value='"+data["disease"]+"'></div>";
+                        renderstr+="<div><label>Subject Id:</label><input type='text' updateval='subjectid' class='form-control' value='"+data["subjectid"]+"'></div>";
+                        renderstr+="<div><label>Sample/Tissue:</label><input type='text' updateval='tissue' class='form-control' value='"+data["tissue"]+"'></div>";
+
+                        renderstr+="</div>"
+
+
+                        $("#defaultModal").find(".modal-body").html(renderstr);
+
+
+                        $("#defaultModal").find(".modal-footer").html("<a class='btn btn-sm btn-warning updatebtn'>Update</a>");
+                         $("#defaultModal").modal("show");
+
+                        $(".updatebtn").click(function(){
+
+
+                          var div = $("#updateform");
+
+                          var newdata={};
+
+                          newdata["_id"]=div.attr("mapid");
+                          newdata["name"]=div.find("[updateval='name']").val();
+                          newdata["subjectid"]=div.find("[updateval='subjectid']").val();
+                          newdata["source"]=div.find("[updateval='source']").val();
+                          newdata["study"]=div.find("[updateval='study']").val();
+                          newdata["disease"]=div.find("[updateval='disease']").val();
+                          newdata["tissue"]=div.find("[updateval='tissue']").val();
+
+
+                          $("#defaultModal").find(".modal-footer").html("wait...");
+                          $.ajax({
+
+                              url:"/updateMap",
+                              data:newdata,
+                              method:'post',
+                              dataType:"JSON",
+                              success:function(data){
+                                if(data.status==="success"){
+                                    $("#defaultModal").find(".modal-footer").html("update map success");
+                                    sampelsdatatable.row(tr).data(newdata).draw();
+                                }
+                               
+                                
+                              },
+                              error:function(e){
+                                 $("#defaultModal").find(".modal-footer").html("update map error");
+                              }
+
+
+                          })
+
+
+                        
+
+                        })
+
+                   })
+                  
+
+
+                   $("#sampleinfotable").on("click","[name='deletebtn']",function(){
+
+                      var sampleObjectId= $(this).attr("value");
+                      //window.location.href  =window.location.href+"map/" +sampleObjectId
+                      //delete this in server
+                      var nearestrow= $(this).parent().closest("tr");
+
+                      
+                      $("#defaultModal").find(".modal-title").html("");
+                      $("#defaultModal").find(".modal-body").html("Delete this map? &nbsp;&nbsp;&nbsp;<btn class='btn-danger btn yesdelete'>Yes</btn>&nbsp;&nbsp;<btn class='btn-primary btn nodelete'>No<btn></btn>");
+                      $("#defaultModal").find(".modal-footer").html("");
+                       $("#defaultModal").modal("show");
+
+                      $(".nodelete").click(function(){
+                        $("#defaultModal").modal("hide");
+
+                      })
+
+                      $(".yesdelete").click(function(){
+
+
+                          $.ajax({
+                              url:"/deleteMapById",
+                              data:{"mapid":sampleObjectId},
+                              method:'post',
+                              dataType:"JSON",
+                              success:function(data){
+
+                                $("#defaultModal").find(".modal-body").html("delete map success");
+                                sampelsdatatable.row(nearestrow).remove().draw();
+                                $("#defaultModal").modal("hide");
+                              },
+                              error:function(e){
+                                 $("#defaultModal").find(".modal-body").html("delete map error");
+                              }
+                          })
+
+
+
+                      })
+
+
+                      
+
+
+                   })
+                  
+ 
+
+                },error:function(){
+
+                  errorLoading2();
+
+                }
+
+
+            })
+
+
+
+
+          }
+
+ 
+ 
+      
+
+ 
+          function startLoading2(){
+
+
+              $("#loadingcanvas").show();
+
+              
+
+              
+          }
+
+          
+          function endLoading2(){
+
+
+              $("#loadingcanvas").hide();
+
+
+          }
+
+        
+          function errorLoading2(){
+              $("#loadingcanvas").hide();
+              alert("error")
+          }
+
+          
+          
+
+          
+
+      });
+
+
+    </script>
+
+
+
+
+
+
+  </body>
+</html>  
