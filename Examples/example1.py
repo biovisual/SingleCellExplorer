@@ -219,7 +219,7 @@ sc.pl.tsne(adata, color='leiden', legend_loc='on data', title='tSNE')
 
 
 ## data loading into single cell explorer database
-p.insertToDB(dbname= 'singleCellDB',dbport= 27017,dbhost='localhost',
+p.insertToDB(dbname= 'scDB',dbport= 27017,dbhost='localhost',
                    adata=adata,mapType="umap",    # umap, tsne 
                    mapName='pmbc10k_health_umap', # this is the title of the map, you can label details info 
                    study="Demo",
@@ -236,7 +236,7 @@ p.insertToDB(dbname= 'singleCellDB',dbport= 27017,dbhost='localhost',
 
 
 ## data loading into single cell explorer database
-p.insertToDB(dbname= 'singleCellDB',dbport= 27017,dbhost='localhost',
+p.insertToDB(dbname= 'scDB',dbport= 27017,dbhost='localhost',
                    adata=adata,mapType="tsne",
                    mapName='pmbc10k_health_tSNE', # this is the title of the map, you can label details info 
                    study="Demo",
