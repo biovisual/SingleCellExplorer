@@ -1,0 +1,16 @@
+pip>=19.0.3
+scanpy>=1.4
+numpy
+gunicorn
+pymongo>=3.7.1
+sklearn
+pandas
+jupyter
+matplotlib
+HTMLParser==0.0.2
+python-igraph
+louvain
+leidenalg
+ipython
+
+
