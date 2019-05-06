@@ -13,16 +13,10 @@ import scanpy.api as sc
 sc.settings.verbosity = 3  # verbosity: errors (0), warnings (1), info (2), hints (3)
 sc.settings.set_figure_params(dpi=80)
 from pymongo import IndexModel, ASCENDING, DESCENDING
-
-
 import subprocess, gzip;
 from subprocess import Popen, PIPE,STDOUT
 import os.path;
 import urllib.request
-
-
-
-
 
 class ProcessPipline:
     def __init__(self):
@@ -198,12 +192,19 @@ class ProcessPipline:
         self.data.obs['n_counts'] = self.data.X.sum(axis=1);
         
         
-    def QC(self,max_n_genes=2500 ,min_n_genes=200,min_n_cells=3,max_percent_mito=0.05):
-        
-        sc.pp.filter_cells(self.data, min_genes=min_n_genes);
-        sc.pp.filter_genes(self.data, min_n_cells)
-        self.data = self.data[self.data.obs['n_genes'] < max_n_genes , :]
-        self.data = self.data[self.data.obs['percent_mito'] < max_percent_mito, :];
+    def QC(self,max_n_genes="" ,min_n_genes="",min_n_cells="",max_percent_mito=""):
+        if min_n_genes!="":
+            print("filter cells");
+            sc.pp.filter_cells(self.data, min_genes=min_n_genes);
+        if min_n_cells != "":
+            print("filter genes");
+            sc.pp.filter_genes(self.data, min_n_cells)
+        if max_n_genes !="":
+            print("filter n_genes < "+str(max_n_genes))
+            self.data = self.data[self.data.obs['n_genes'] < max_n_genes , :]
+        if max_percent_mito != "":
+            print("filter percent_mito < "+str(max_percent_mito))
+            self.data = self.data[self.data.obs['percent_mito'] < max_percent_mito, :];
         
     def scanpyQuickProcess(self):
         adata = self.data.copy();
