@@ -10,9 +10,9 @@ sudo apt install python3-pip
 
 pip3 install Django
 
-### for notebook
-
-pip3 install leidenalg
+### for computational env and python notebook 
+sudo apt-get install python3 python-dev python3-dev build-essential libssl-dev libffi-dev libxml2-dev libxslt1-dev zlib1g-dev 
+pip3 install --user leidenalg
 
 ### install and start mongodb
 
