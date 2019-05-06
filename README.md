@@ -1,5 +1,5 @@
 # SingleCellExplorer: 
-### web applicaton for single cell datasets with Integration of Python Notebook
+### Web applicaton for single cell datasets with Python Notebook and MongoDB integration
 ####### The software requires Python 3.5 or above Ubuntu 18.04 (and above) 
 
 sudo apt-get update
