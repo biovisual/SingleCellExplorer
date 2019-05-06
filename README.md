@@ -10,6 +10,10 @@ sudo apt install python3-pip
 
 pip3 install Django
 
+### for notebook
+
+pip3 install leidenalg
+
 ### install and start mongodb
 
 curl -O https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.6.12.tgz
