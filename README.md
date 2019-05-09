@@ -1,4 +1,6 @@
 # SingleCellExplorer: 
+software demo: http://54.159.6.229:8002/
+notebook demo: http://54.159.6.229:8001/
 ### Web applicaton for single cell datasets with Python Notebook and MongoDB integration
 ####### The software requires Python 3.5 or above Ubuntu 18.04 (and above) 
 
