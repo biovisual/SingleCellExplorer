@@ -1,0 +1,458 @@
+Watching for file changes with StatReloader
+[01/May/2019 02:57:04] "GET / HTTP/1.1" 200 5635
+[01/May/2019 02:57:04] "GET /static/lib/jquery-3.2.1.js HTTP/1.1" 304 0
+[01/May/2019 02:57:04] "GET /static/lib/fontawesome5.8/css/all.min.css HTTP/1.1" 304 0
+[01/May/2019 02:57:04] "GET /static/lib/fonts.css HTTP/1.1" 200 6781
+[01/May/2019 02:57:04] "GET /static/lib/bootstrap-4.1.3/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+[01/May/2019 02:57:04] "GET /static/lib/bootstrap-4.1.3/css/bootstrap.min.css HTTP/1.1" 304 0
+[01/May/2019 02:57:04] "GET /static/lib/fontawesome5.8/js/all.min.js HTTP/1.1" 304 0
+[01/May/2019 02:57:04] "POST /getMapInfoByDiseaseCategory HTTP/1.1" 200 465
+[01/May/2019 02:57:04] "GET /static/images/x.jpg HTTP/1.1" 200 491057
+[01/May/2019 02:57:05] "GET /static/lib/fontawesome5.8/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+[01/May/2019 14:07:17] "GET /static/lib/jquery-3.2.1.js HTTP/1.1" 304 0
+[01/May/2019 14:07:17] "GET /static/lib/d3.v4.js HTTP/1.1" 304 0
+[01/May/2019 14:07:18] "GET /static/lib/jquery-ui-1.12.1.flick/jquery-ui.min.css HTTP/1.1" 304 0
+[01/May/2019 14:07:18] "GET /static/lib/jquery-ui-1.12.1.flick/jquery-ui.theme.min.css HTTP/1.1" 304 0
+[01/May/2019 14:07:18] "GET /static/lib/jquery-ui-slider-pips/jquery-ui-slider-pips.min.css HTTP/1.1" 304 0
+[01/May/2019 14:07:18] "GET /static/lib/selectize/css/selectize.css HTTP/1.1" 304 0
+[01/May/2019 14:07:18] "GET /static/lib/fontawesome5.8/css/all.min.css HTTP/1.1" 304 0
+[01/May/2019 14:07:18] "GET /static/lib/bgrins-spectrum/spectrum.css HTTP/1.1" 304 0
+[01/May/2019 14:07:18] "GET /static/lib/bootstrap-4.1.3/css/bootstrap.min.css HTTP/1.1" 304 0
+[01/May/2019 14:07:18] "GET /static/lib/DataTables/datatables.min.css HTTP/1.1" 304 0
+[01/May/2019 14:07:18] "GET /static/css/components.css HTTP/1.1" 304 0
+[01/May/2019 14:07:18] "GET /static/lib/d3-hsv.v0.1.min.js HTTP/1.1" 304 0
+[01/May/2019 14:07:18] "GET /static/lib/d3-scale-chromatic.v1.min.js HTTP/1.1" 304 0
+[01/May/2019 14:07:18] "GET /static/lib/jquery-ui-1.12.1.flick/jquery-ui.min.js HTTP/1.1" 304 0
+[01/May/2019 14:07:18] "GET /static/lib/jquery-ui-slider-pips/jquery-ui-slider-pips.min.js HTTP/1.1" 304 0
+[01/May/2019 14:07:18] "GET /static/lib/selectize/js/standalone/selectize.min.js HTTP/1.1" 304 0
+[01/May/2019 14:07:18] "GET /static/lib/slideReveal/jquery.slidereveal.min.js HTTP/1.1" 304 0
+[01/May/2019 14:07:18] "GET /static/lib/bgrins-spectrum/spectrum.js HTTP/1.1" 304 0
+[01/May/2019 14:07:18] "GET /static/lib/bootstrap-4.1.3/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+[01/May/2019 14:07:18] "GET /static/lib/fontawesome5.8/js/all.min.js HTTP/1.1" 304 0
+[01/May/2019 14:07:18] "GET /static/lib/DataTables/datatables.min.js HTTP/1.1" 304 0
+[01/May/2019 14:07:18] "GET /static/lib/download.js HTTP/1.1" 304 0
+[01/May/2019 14:07:19] "GET /static/js/lasso.js HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[01/May/2019 14:07:19] "GET /favicon.ico HTTP/1.1" 404 8871
+[01/May/2019 14:07:19] "POST /getMapDataByMapId HTTP/1.1" 200 725665
+[01/May/2019 14:07:19] "POST /getClstrsByTypeAndMapid HTTP/1.1" 200 56738
+[01/May/2019 14:07:19] "GET /static/lib/fontawesome5.8/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+[01/May/2019 14:19:50] "GET /map/5c8bf53ea05a37a5c7d707ce/ HTTP/1.1" 200 108941
+[01/May/2019 14:19:50] "GET /static/lib/jquery-3.2.1.js HTTP/1.1" 304 0
+[01/May/2019 14:19:50] "GET /static/lib/jquery-ui-1.12.1.flick/jquery-ui.min.css HTTP/1.1" 304 0
+[01/May/2019 14:19:50] "GET /static/lib/selectize/css/selectize.css HTTP/1.1" 304 0
+[01/May/2019 14:19:50] "GET /static/lib/jquery-ui-slider-pips/jquery-ui-slider-pips.min.css HTTP/1.1" 304 0
+[01/May/2019 14:19:50] "GET /static/lib/jquery-ui-1.12.1.flick/jquery-ui.theme.min.css HTTP/1.1" 304 0
+[01/May/2019 14:19:50] "GET /static/lib/fontawesome5.8/css/all.min.css HTTP/1.1" 304 0
+[01/May/2019 14:19:50] "GET /static/lib/bgrins-spectrum/spectrum.css HTTP/1.1" 304 0
+[01/May/2019 14:19:50] "GET /static/lib/bootstrap-4.1.3/css/bootstrap.min.css HTTP/1.1" 304 0
+[01/May/2019 14:19:50] "GET /static/lib/DataTables/datatables.min.css HTTP/1.1" 304 0
+[01/May/2019 14:19:50] "GET /static/lib/d3.v4.js HTTP/1.1" 304 0
+[01/May/2019 14:19:50] "GET /static/css/components.css HTTP/1.1" 304 0
+[01/May/2019 14:19:50] "GET /static/lib/d3-hsv.v0.1.min.js HTTP/1.1" 304 0
+[01/May/2019 14:19:50] "GET /static/lib/d3-scale-chromatic.v1.min.js HTTP/1.1" 304 0
+[01/May/2019 14:19:50] "GET /static/lib/jquery-ui-1.12.1.flick/jquery-ui.min.js HTTP/1.1" 304 0
+[01/May/2019 14:19:50] "GET /static/lib/jquery-ui-slider-pips/jquery-ui-slider-pips.min.js HTTP/1.1" 304 0
+[01/May/2019 14:19:50] "GET /static/lib/selectize/js/standalone/selectize.min.js HTTP/1.1" 304 0
+[01/May/2019 14:19:50] "GET /static/lib/slideReveal/jquery.slidereveal.min.js HTTP/1.1" 304 0
+[01/May/2019 14:19:50] "GET /static/lib/bgrins-spectrum/spectrum.js HTTP/1.1" 304 0
+[01/May/2019 14:19:50] "GET /static/lib/bootstrap-4.1.3/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+[01/May/2019 14:19:50] "GET /static/lib/fontawesome5.8/js/all.min.js HTTP/1.1" 304 0
+[01/May/2019 14:19:50] "GET /static/lib/DataTables/datatables.min.js HTTP/1.1" 304 0
+[01/May/2019 14:19:50] "GET /static/lib/download.js HTTP/1.1" 304 0
+[01/May/2019 14:19:50] "GET /static/js/lasso.js HTTP/1.1" 304 0
+[01/May/2019 14:19:51] "POST /getMapDataByMapId HTTP/1.1" 200 725665
+[01/May/2019 14:19:51] "POST /getClstrsByTypeAndMapid HTTP/1.1" 200 56738
+[01/May/2019 14:19:51] "GET /static/lib/fontawesome5.8/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+[01/May/2019 14:20:00] "GET /static/lib/fontawesome5.8/webfonts/fa-regular-400.woff2 HTTP/1.1" 304 0
+[01/May/2019 17:11:30] "GET /static/lib/jquery-3.2.1.js HTTP/1.1" 304 0
+[01/May/2019 17:11:30] "GET /static/lib/d3.v4.js HTTP/1.1" 304 0
+[01/May/2019 17:11:30] "GET /static/lib/jquery-ui-1.12.1.flick/jquery-ui.min.css HTTP/1.1" 304 0
+[01/May/2019 17:11:30] "GET /static/lib/jquery-ui-slider-pips/jquery-ui-slider-pips.min.css HTTP/1.1" 304 0
+[01/May/2019 17:11:30] "GET /static/lib/jquery-ui-1.12.1.flick/jquery-ui.theme.min.css HTTP/1.1" 304 0
+[01/May/2019 17:11:30] "GET /static/lib/selectize/css/selectize.css HTTP/1.1" 304 0
+[01/May/2019 17:11:31] "GET /static/lib/fontawesome5.8/css/all.min.css HTTP/1.1" 304 0
+[01/May/2019 17:11:31] "GET /static/lib/bgrins-spectrum/spectrum.css HTTP/1.1" 304 0
+[01/May/2019 17:11:31] "GET /static/lib/bootstrap-4.1.3/css/bootstrap.min.css HTTP/1.1" 304 0
+[01/May/2019 17:11:31] "GET /static/lib/DataTables/datatables.min.css HTTP/1.1" 304 0
+[01/May/2019 17:11:31] "GET /static/css/components.css HTTP/1.1" 304 0
+[01/May/2019 17:11:31] "GET /static/lib/d3-hsv.v0.1.min.js HTTP/1.1" 304 0
+[01/May/2019 17:11:31] "GET /static/lib/d3-scale-chromatic.v1.min.js HTTP/1.1" 304 0
+[01/May/2019 17:11:31] "GET /static/lib/jquery-ui-1.12.1.flick/jquery-ui.min.js HTTP/1.1" 304 0
+[01/May/2019 17:11:31] "GET /static/lib/slideReveal/jquery.slidereveal.min.js HTTP/1.1" 304 0
+[01/May/2019 17:11:31] "GET /static/lib/selectize/js/standalone/selectize.min.js HTTP/1.1" 304 0
+[01/May/2019 17:11:31] "GET /static/lib/jquery-ui-slider-pips/jquery-ui-slider-pips.min.js HTTP/1.1" 304 0
+[01/May/2019 17:11:31] "GET /static/lib/bgrins-spectrum/spectrum.js HTTP/1.1" 304 0
+[01/May/2019 17:11:31] "GET /static/lib/bootstrap-4.1.3/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+[01/May/2019 17:11:31] "GET /static/lib/fontawesome5.8/js/all.min.js HTTP/1.1" 304 0
+[01/May/2019 17:11:31] "GET /static/lib/DataTables/datatables.min.js HTTP/1.1" 304 0
+[01/May/2019 17:11:31] "GET /static/lib/download.js HTTP/1.1" 304 0
+[01/May/2019 17:11:31] "GET /static/js/lasso.js HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[01/May/2019 17:11:31] "GET /favicon.ico HTTP/1.1" 404 8871
+[01/May/2019 17:11:31] "POST /getMapDataByMapId HTTP/1.1" 200 725665
+[01/May/2019 17:11:32] "POST /getClstrsByTypeAndMapid HTTP/1.1" 200 56738
+[01/May/2019 17:11:32] "GET /static/lib/fontawesome5.8/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+[01/May/2019 17:11:33] "GET /static/lib/fontawesome5.8/js/all.min.js HTTP/1.1" 304 0
+[01/May/2019 17:11:33] "GET /static/lib/jquery-3.2.1.js HTTP/1.1" 304 0
+[01/May/2019 17:11:33] "GET /static/lib/bootstrap-4.1.3/css/bootstrap.min.css HTTP/1.1" 304 0
+[01/May/2019 17:11:33] "GET /static/lib/fonts.css HTTP/1.1" 304 0
+[01/May/2019 17:11:33] "GET /static/lib/bootstrap-4.1.3/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+[01/May/2019 17:11:33] "GET /static/lib/fontawesome5.8/css/all.min.css HTTP/1.1" 304 0
+[01/May/2019 17:11:33] "POST /getMapInfoByDiseaseCategory HTTP/1.1" 200 465
+[01/May/2019 17:11:33] "GET /static/images/x.jpg HTTP/1.1" 200 491057
+[01/May/2019 17:11:33] "GET /static/lib/fontawesome5.8/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+[03/May/2019 10:06:09] "GET / HTTP/1.1" 200 5635
+[03/May/2019 11:21:09] "GET / HTTP/1.1" 200 5635
+----------------------------------------
+Exception happened during processing of request from ('198.108.67.48', 41850)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[04/May/2019 01:04:31] "GET /static/lib/fontawesome5.8/css/all.min.css HTTP/1.1" 304 0
+[04/May/2019 01:04:31] "GET /static/lib/jquery-3.2.1.js HTTP/1.1" 304 0
+[04/May/2019 01:04:31] "GET /static/lib/d3.v4.js HTTP/1.1" 304 0
+[04/May/2019 01:04:31] "GET /static/lib/jquery-ui-1.12.1.flick/jquery-ui.min.css HTTP/1.1" 304 0
+[04/May/2019 01:04:31] "GET /static/lib/fonts.css HTTP/1.1" 304 0
+[04/May/2019 01:04:31] "GET /static/lib/bootstrap-4.1.3/css/bootstrap.min.css HTTP/1.1" 304 0
+[04/May/2019 01:04:31] "GET /static/lib/jquery-ui-1.12.1.flick/jquery-ui.theme.min.css HTTP/1.1" 304 0
+[04/May/2019 01:04:31] "GET /static/lib/jquery-ui-slider-pips/jquery-ui-slider-pips.min.css HTTP/1.1" 304 0
+[04/May/2019 01:04:31] "GET /static/lib/fontawesome5.8/js/all.min.js HTTP/1.1" 304 0
+[04/May/2019 01:04:31] "GET /static/lib/bootstrap-4.1.3/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+[04/May/2019 01:04:31] "GET /static/lib/selectize/css/selectize.css HTTP/1.1" 304 0
+[04/May/2019 01:04:32] "GET /static/lib/bgrins-spectrum/spectrum.css HTTP/1.1" 304 0
+[04/May/2019 01:04:32] "GET /static/lib/DataTables/datatables.min.css HTTP/1.1" 304 0
+[04/May/2019 01:04:32] "GET /static/css/components.css HTTP/1.1" 304 0
+[04/May/2019 01:04:32] "GET /static/images/x.jpg HTTP/1.1" 200 491057
+[04/May/2019 01:04:32] "GET /static/lib/d3-hsv.v0.1.min.js HTTP/1.1" 304 0
+[04/May/2019 01:04:32] "GET /static/lib/d3-scale-chromatic.v1.min.js HTTP/1.1" 304 0
+[04/May/2019 01:04:32] "GET /static/lib/jquery-ui-1.12.1.flick/jquery-ui.min.js HTTP/1.1" 304 0
+[04/May/2019 01:04:32] "GET /static/lib/jquery-ui-slider-pips/jquery-ui-slider-pips.min.js HTTP/1.1" 304 0
+[04/May/2019 01:04:32] "GET /static/lib/selectize/js/standalone/selectize.min.js HTTP/1.1" 304 0
+[04/May/2019 01:04:32] "GET /static/lib/slideReveal/jquery.slidereveal.min.js HTTP/1.1" 304 0
+[04/May/2019 01:04:32] "GET /static/lib/bgrins-spectrum/spectrum.js HTTP/1.1" 304 0
+[04/May/2019 01:04:32] "GET /static/lib/DataTables/datatables.min.js HTTP/1.1" 304 0
+[04/May/2019 01:04:32] "POST /getMapInfoByDiseaseCategory HTTP/1.1" 200 465
+[04/May/2019 01:04:32] "GET /static/lib/download.js HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[04/May/2019 01:04:32] "GET /favicon.ico HTTP/1.1" 404 8871
+[04/May/2019 01:04:32] "GET /static/js/lasso.js HTTP/1.1" 304 0
+[04/May/2019 01:04:32] "GET /static/lib/fontawesome5.8/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+[04/May/2019 01:04:33] "POST /getMapDataByMapId HTTP/1.1" 200 725665
+[04/May/2019 01:04:34] "POST /getClstrsByTypeAndMapid HTTP/1.1" 200 56738
+[04/May/2019 02:59:59] "GET / HTTP/1.1" 200 5635
+[04/May/2019 02:59:59] "POST /getMapInfoByDiseaseCategory HTTP/1.1" 200 465
+[04/May/2019 03:47:43] "GET / HTTP/1.1" 200 5635
+[04/May/2019 03:47:43] "GET /static/lib/jquery-3.2.1.js HTTP/1.1" 200 86658
+[04/May/2019 03:47:43] "GET /static/lib/fontawesome5.8/css/all.min.css HTTP/1.1" 200 55111
+[04/May/2019 03:47:43] "GET /static/lib/fonts.css HTTP/1.1" 200 6781
+[04/May/2019 03:47:43] "GET /static/lib/bootstrap-4.1.3/js/bootstrap.bundle.min.js HTTP/1.1" 200 70966
+[04/May/2019 03:47:43] "GET /static/lib/bootstrap-4.1.3/css/bootstrap.min.css HTTP/1.1" 200 140936
+[04/May/2019 03:47:43] "GET /static/lib/fontawesome5.8/js/all.min.js HTTP/1.1" 200 1123785
+[04/May/2019 03:47:44] "POST /getMapInfoByDiseaseCategory HTTP/1.1" 200 465
+[04/May/2019 03:47:44] "GET /static/images/x.jpg HTTP/1.1" 200 491057
+[04/May/2019 03:47:44] "GET /static/lib/fontawesome5.8/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 74256
+Not Found: /favicon.ico
+[04/May/2019 03:47:44] "GET /favicon.ico HTTP/1.1" 404 8871
+/home/ubuntu/files/git/singleCellAppTest/webapp/admin.py changed, reloading.
+Performing system checks...
+
+load service
+System check identified no issues (0 silenced).
+
+You have 2 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): auth.
+Run 'python manage.py migrate' to apply them.
+May 01, 2019 - 02:55:10
+Django version 2.2, using settings 'singleCell.settings'
+Starting development server at http://172.31.29.178:8002/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/files/git1/singleCellAppTest/webapp/views.py", line 16, in index
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index/index.html
+[05/May/2019 23:35:22] "GET / HTTP/1.1" 500 73476
+Not Found: /favicon.ico
+[05/May/2019 23:35:23] "GET /favicon.ico HTTP/1.1" 404 8871
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/files/git1/singleCellAppTest/webapp/views.py", line 16, in index
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index/index.html
+[07/May/2019 03:40:32] "GET / HTTP/1.1" 500 74548
+Not Found: /favicon.ico
+[07/May/2019 03:40:32] "GET /favicon.ico HTTP/1.1" 404 8871
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/files/git1/singleCellAppTest/webapp/views.py", line 16, in index
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index/index.html
+[07/May/2019 03:41:05] "GET / HTTP/1.1" 500 74548
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/files/git1/singleCellAppTest/webapp/views.py", line 16, in index
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index/index.html
+[07/May/2019 03:42:02] "GET / HTTP/1.1" 500 74683
+Watching for file changes with StatReloader
+[07/May/2019 20:43:06] "GET / HTTP/1.1" 200 6870
+[07/May/2019 20:43:07] "POST /getMapInfoByDiseaseCategory HTTP/1.1" 200 734
+Not Found: /favicon.ico
+[07/May/2019 20:43:07] "GET /favicon.ico HTTP/1.1" 404 8871
+[08/May/2019 11:50:20] "GET / HTTP/1.1" 200 6870
+----------------------------------------
+Exception happened during processing of request from ('198.108.67.48', 9240)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[08/May/2019 15:15:58] "GET / HTTP/1.1" 200 6870
+[08/May/2019 15:15:58] "GET /static/lib/jquery-3.2.1.js HTTP/1.1" 304 0
+[08/May/2019 15:15:58] "GET /static/lib/fontawesome5.8/js/all.min.js HTTP/1.1" 304 0
+[08/May/2019 15:15:58] "GET /static/lib/fonts.css HTTP/1.1" 304 0
+[08/May/2019 15:15:58] "GET /static/lib/fontawesome5.8/css/all.min.css HTTP/1.1" 304 0
+[08/May/2019 15:15:58] "GET /static/lib/bootstrap-4.1.3/css/bootstrap.min.css HTTP/1.1" 304 0
+[08/May/2019 15:15:58] "GET /static/lib/bootstrap-4.1.3/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+[08/May/2019 15:15:58] "GET /static/images/x.jpg HTTP/1.1" 304 0
+[08/May/2019 15:15:58] "POST /getMapInfoByDiseaseCategory HTTP/1.1" 200 734
+Not Found: /favicon.ico
+[08/May/2019 15:15:58] "GET /favicon.ico HTTP/1.1" 404 8871
+[08/May/2019 15:15:59] "GET /static/lib/fontawesome5.8/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+[08/May/2019 15:16:07] "GET /static/images/5ccfb3c066adac0c7e7924c9.html HTTP/1.1" 200 997190
+[08/May/2019 15:16:08] "GET /static/images/custom.css HTTP/1.1" 404 1792
+[08/May/2019 15:16:16] "GET /map/5ccfb3c066adac0c7e7924c9 HTTP/1.1" 301 0
+[08/May/2019 15:16:16] "GET /map/5ccfb3c066adac0c7e7924c9/ HTTP/1.1" 200 109027
+[08/May/2019 15:16:17] "GET /static/lib/d3-hsv.v0.1.min.js HTTP/1.1" 200 2045
+[08/May/2019 15:16:17] "GET /static/lib/d3.v4.js HTTP/1.1" 200 221957
+[08/May/2019 15:16:17] "GET /static/lib/jquery-ui-1.12.1.flick/jquery-ui.min.css HTTP/1.1" 200 31185
+[08/May/2019 15:16:17] "GET /static/lib/jquery-ui-1.12.1.flick/jquery-ui.min.js HTTP/1.1" 200 253668
+[08/May/2019 15:16:17] "GET /static/lib/jquery-ui-slider-pips/jquery-ui-slider-pips.min.css HTTP/1.1" 200 6432
+[08/May/2019 15:16:17] "GET /static/lib/jquery-ui-1.12.1.flick/jquery-ui.theme.min.css HTTP/1.1" 200 14093
+[08/May/2019 15:16:17] "GET /static/lib/selectize/css/selectize.css HTTP/1.1" 200 8589
+[08/May/2019 15:16:17] "GET /static/lib/d3-scale-chromatic.v1.min.js HTTP/1.1" 200 18941
+[08/May/2019 15:16:17] "GET /static/lib/bgrins-spectrum/spectrum.css HTTP/1.1" 200 14921
+[08/May/2019 15:16:17] "GET /static/css/components.css HTTP/1.1" 200 880
+[08/May/2019 15:16:17] "GET /static/lib/DataTables/datatables.min.css HTTP/1.1" 200 35722
+[08/May/2019 15:16:17] "GET /static/lib/jquery-ui-slider-pips/jquery-ui-slider-pips.min.js HTTP/1.1" 200 6645
+[08/May/2019 15:16:17] "GET /static/lib/selectize/js/standalone/selectize.min.js HTTP/1.1" 200 45139
+[08/May/2019 15:16:17] "GET /static/lib/slideReveal/jquery.slidereveal.min.js HTTP/1.1" 200 2780
+[08/May/2019 15:16:17] "GET /static/lib/bgrins-spectrum/spectrum.js HTTP/1.1" 200 79270
+[08/May/2019 15:16:17] "GET /static/lib/download.js HTTP/1.1" 200 5839
+[08/May/2019 15:16:17] "GET /static/lib/DataTables/datatables.min.js HTTP/1.1" 200 2178674
+[08/May/2019 15:16:17] "GET /static/js/lasso.js HTTP/1.1" 200 2991
+[08/May/2019 15:16:19] "POST /getMapDataByMapId HTTP/1.1" 200 754524
+[08/May/2019 15:16:19] "POST /getClstrsByTypeAndMapid HTTP/1.1" 200 59535
+[08/May/2019 15:16:21] "POST /getMapInfoByDiseaseCategory HTTP/1.1" 200 734
+[08/May/2019 15:16:52] "GET / HTTP/1.1" 200 6870
+[08/May/2019 15:16:52] "POST /getMapInfoByDiseaseCategory HTTP/1.1" 200 734
+[08/May/2019 15:17:07] "GET /static/images/custom.css HTTP/1.1" 404 1792
+[08/May/2019 15:17:12] "GET /map/5ccfb3c066adac0c7e7924c9/ HTTP/1.1" 200 109027
+[08/May/2019 15:17:13] "POST /getMapDataByMapId HTTP/1.1" 200 754524
+[08/May/2019 15:17:13] "POST /getClstrsByTypeAndMapid HTTP/1.1" 200 59535
+[08/May/2019 15:17:48] "POST /getMapInfoByDiseaseCategory HTTP/1.1" 200 734
+[08/May/2019 23:32:29] code 400, message Bad request syntax ('\x16\x03\x01\x01 \x01\x00\x01\x1c\x03\x03»W[ÉBÿ\x1e\x98tB!Où\x88´åE4ÔgS\x8fv\x7fgéf\x0f*\x1f\x98w j\x99eÊR?>¯\x01v\x0b\x06TP\x16\x86ö¥ãÈâM"ã7\x82Kø\xad\ros\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À\'\x00gÀ')
+[08/May/2019 23:32:29] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[09/May/2019 15:20:41] "GET / HTTP/1.1" 200 6865
+[09/May/2019 15:20:41] "GET /static/lib/jquery-3.2.1.js HTTP/1.1" 304 0
+[09/May/2019 15:20:41] "GET /static/lib/fontawesome5.8/css/all.min.css HTTP/1.1" 304 0
+[09/May/2019 15:20:41] "GET /static/lib/bootstrap-4.1.3/css/bootstrap.min.css HTTP/1.1" 304 0
+[09/May/2019 15:20:41] "GET /static/lib/fontawesome5.8/js/all.min.js HTTP/1.1" 304 0
+[09/May/2019 15:20:41] "GET /static/lib/bootstrap-4.1.3/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+[09/May/2019 15:20:41] "GET /static/lib/fonts.css HTTP/1.1" 304 0
+[09/May/2019 15:20:42] "GET /static/images/x.jpg HTTP/1.1" 304 0
+[09/May/2019 15:20:43] "POST /getMapInfoByDiseaseCategory HTTP/1.1" 200 734
+[09/May/2019 15:20:43] "GET /static/lib/fontawesome5.8/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+[09/May/2019 15:33:55] "GET /map/5c8bf53ea05a37a5c7d707ce HTTP/1.1" 301 0
+[09/May/2019 15:33:55] "GET /map/5c8bf53ea05a37a5c7d707ce/ HTTP/1.1" 200 109027
+[09/May/2019 15:33:55] "GET /static/lib/d3.v4.js HTTP/1.1" 304 0
+[09/May/2019 15:33:55] "GET /static/lib/d3-hsv.v0.1.min.js HTTP/1.1" 304 0
+[09/May/2019 15:33:55] "GET /static/lib/d3-scale-chromatic.v1.min.js HTTP/1.1" 304 0
+[09/May/2019 15:33:55] "GET /static/lib/jquery-ui-slider-pips/jquery-ui-slider-pips.min.js HTTP/1.1" 304 0
+[09/May/2019 15:33:55] "GET /static/lib/jquery-ui-1.12.1.flick/jquery-ui.min.js HTTP/1.1" 304 0
+[09/May/2019 15:33:55] "GET /static/lib/jquery-ui-1.12.1.flick/jquery-ui.min.css HTTP/1.1" 304 0
+[09/May/2019 15:33:55] "GET /static/lib/jquery-ui-1.12.1.flick/jquery-ui.theme.min.css HTTP/1.1" 304 0
+[09/May/2019 15:33:55] "GET /static/lib/jquery-ui-slider-pips/jquery-ui-slider-pips.min.css HTTP/1.1" 304 0
+[09/May/2019 15:33:55] "GET /static/lib/selectize/css/selectize.css HTTP/1.1" 304 0
+[09/May/2019 15:33:55] "GET /static/lib/DataTables/datatables.min.css HTTP/1.1" 304 0
+[09/May/2019 15:33:55] "GET /static/lib/bgrins-spectrum/spectrum.css HTTP/1.1" 304 0
+[09/May/2019 15:33:55] "GET /static/css/components.css HTTP/1.1" 304 0
+[09/May/2019 15:33:55] "GET /static/lib/selectize/js/standalone/selectize.min.js HTTP/1.1" 304 0
+[09/May/2019 15:33:56] "GET /static/lib/bgrins-spectrum/spectrum.js HTTP/1.1" 304 0
+[09/May/2019 15:33:56] "GET /static/lib/slideReveal/jquery.slidereveal.min.js HTTP/1.1" 304 0
+[09/May/2019 15:33:56] "GET /static/lib/DataTables/datatables.min.js HTTP/1.1" 304 0
+[09/May/2019 15:33:56] "GET /static/js/lasso.js HTTP/1.1" 304 0
+[09/May/2019 15:33:56] "GET /static/lib/download.js HTTP/1.1" 304 0
+[09/May/2019 15:33:56] "POST /getMapDataByMapId HTTP/1.1" 200 725665
+[09/May/2019 15:33:57] "POST /getClstrsByTypeAndMapid HTTP/1.1" 200 56738
+[09/May/2019 15:33:59] "POST /genelistSearch HTTP/1.1" 200 671
+[09/May/2019 15:34:03] "POST /genelistSearch HTTP/1.1" 200 10680
+[09/May/2019 15:34:03] "POST /getGeneSearchPlotDataByclstrType HTTP/1.1" 200 56013
+[09/May/2019 15:34:03] "GET /static/lib/fontawesome5.8/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13552
+[09/May/2019 15:34:13] "POST /genelistSearch HTTP/1.1" 200 10680
+[09/May/2019 15:34:14] "POST /getGeneSearchPlotDataByclstrType HTTP/1.1" 200 56013
+[09/May/2019 15:34:24] "POST /genelistSearch HTTP/1.1" 200 10680
+[09/May/2019 15:34:25] "POST /getGeneSearchPlotDataByclstrType HTTP/1.1" 200 56013
+[09/May/2019 15:34:26] "POST /genelistSearch HTTP/1.1" 200 671
+[09/May/2019 15:34:29] "POST /genelistSearch HTTP/1.1" 200 16897
+[09/May/2019 15:34:29] "POST /genelistSearch HTTP/1.1" 200 16897
+[09/May/2019 15:34:29] "POST /getGeneSearchPlotDataByclstrType HTTP/1.1" 200 55967
+[09/May/2019 15:34:29] "POST /getGeneSearchPlotDataByclstrType HTTP/1.1" 200 55967
+[09/May/2019 15:34:46] "POST /genelistSearch HTTP/1.1" 200 16897
+[09/May/2019 15:34:46] "POST /genelistSearch HTTP/1.1" 200 16897
+[09/May/2019 15:34:46] "POST /getGeneSearchPlotDataByclstrType HTTP/1.1" 200 55967
+[09/May/2019 15:34:46] "POST /getGeneSearchPlotDataByclstrType HTTP/1.1" 200 55967
+[09/May/2019 15:34:49] "POST /genelistSearch HTTP/1.1" 200 16897
+[09/May/2019 15:34:49] "POST /genelistSearch HTTP/1.1" 200 16897
+[09/May/2019 15:34:49] "POST /getGeneSearchPlotDataByclstrType HTTP/1.1" 200 55967
+[09/May/2019 15:34:49] "POST /getGeneSearchPlotDataByclstrType HTTP/1.1" 200 55967
+[09/May/2019 15:35:28] "POST /genelistSearch HTTP/1.1" 200 16897
+[09/May/2019 15:35:28] "POST /genelistSearch HTTP/1.1" 200 16897
+[09/May/2019 15:35:28] "POST /getGeneSearchPlotDataByclstrType HTTP/1.1" 200 55967
+[09/May/2019 15:35:28] "POST /getGeneSearchPlotDataByclstrType HTTP/1.1" 200 55967
+[09/May/2019 15:35:29] "POST /genelistSearch HTTP/1.1" 200 16897
+[09/May/2019 15:35:29] "POST /genelistSearch HTTP/1.1" 200 16897
+[09/May/2019 15:35:30] "POST /getGeneSearchPlotDataByclstrType HTTP/1.1" 200 55967
+[09/May/2019 15:35:30] "POST /getGeneSearchPlotDataByclstrType HTTP/1.1" 200 55967
+[09/May/2019 15:57:28] "GET / HTTP/1.1" 200 6865
+[09/May/2019 15:57:28] "POST /getMapInfoByDiseaseCategory HTTP/1.1" 200 734
+[10/May/2019 01:39:58] "GET / HTTP/1.1" 200 6865
+[10/May/2019 01:39:59] "POST /getMapInfoByDiseaseCategory HTTP/1.1" 200 734
+Not Found: /favicon.ico
+[10/May/2019 01:39:59] "GET /favicon.ico HTTP/1.1" 404 8871
+[10/May/2019 01:40:22] "GET / HTTP/1.1" 200 6865
+[10/May/2019 01:40:23] "POST /getMapInfoByDiseaseCategory HTTP/1.1" 200 734
+[10/May/2019 01:41:00] "GET /static/images/5ccfb3c066adac0c7e7924c9.html HTTP/1.1" 200 997190
+[10/May/2019 01:41:02] "GET /static/images/custom.css HTTP/1.1" 404 1792
+[10/May/2019 01:41:11] "GET /map/5ccfb3c066adac0c7e7924c9/ HTTP/1.1" 200 109027
+[10/May/2019 01:41:11] "GET /static/css/components.css HTTP/1.1" 304 0
+[10/May/2019 01:41:12] "POST /getMapDataByMapId HTTP/1.1" 200 754524
+[10/May/2019 01:41:13] "POST /getClstrsByTypeAndMapid HTTP/1.1" 200 59535
+[10/May/2019 01:41:18] "POST /genelistSearch HTTP/1.1" 200 615
+[10/May/2019 01:41:19] "POST /genelistSearch HTTP/1.1" 200 388
+[10/May/2019 01:41:19] "POST /getGeneSearchPlotDataByclstrType HTTP/1.1" 200 61288
+[10/May/2019 01:41:20] "POST /genelistSearch HTTP/1.1" 200 54558
+[10/May/2019 01:41:20] "POST /getGeneSearchPlotDataByclstrType HTTP/1.1" 200 62028
+[10/May/2019 01:41:21] "POST /genelistSearch HTTP/1.1" 200 88
+[10/May/2019 01:41:22] "POST /getGeneSearchPlotDataByclstrType HTTP/1.1" 200 60427
+[10/May/2019 01:41:22] "POST /genelistSearch HTTP/1.1" 200 152
+[10/May/2019 01:41:22] "POST /getGeneSearchPlotDataByclstrType HTTP/1.1" 200 60696
+[10/May/2019 01:41:22] "POST /genelistSearch HTTP/1.1" 200 58653
+[10/May/2019 01:41:22] "POST /getGeneSearchPlotDataByclstrType HTTP/1.1" 200 61982
+[10/May/2019 01:41:24] "POST /genelistSearch HTTP/1.1" 200 35736
+[10/May/2019 01:41:24] "POST /getGeneSearchPlotDataByclstrType HTTP/1.1" 200 62001
+[10/May/2019 01:41:25] "POST /genelistSearch HTTP/1.1" 200 4951
+[10/May/2019 01:41:25] "POST /getGeneSearchPlotDataByclstrType HTTP/1.1" 200 61955
+[10/May/2019 01:54:33] "GET / HTTP/1.1" 200 6865
+[10/May/2019 01:54:33] "POST /getMapInfoByDiseaseCategory HTTP/1.1" 200 734
+[10/May/2019 01:54:36] "GET /map/5c8bf53ea05a37a5c7d707ce/ HTTP/1.1" 200 109027
+[10/May/2019 01:54:37] "POST /getMapDataByMapId HTTP/1.1" 200 725665
+[10/May/2019 01:54:37] "POST /getClstrsByTypeAndMapid HTTP/1.1" 200 56738
+[10/May/2019 02:50:30] "GET / HTTP/1.1" 200 6865
+[10/May/2019 02:50:30] "POST /getMapInfoByDiseaseCategory HTTP/1.1" 200 734
+[10/May/2019 05:16:45] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[10/May/2019 05:16:45] "  /*à     Cookie: mstshash=Administr" 400 -
+[11/May/2019 03:36:11] "GET / HTTP/1.1" 200 6865
+[11/May/2019 03:36:11] "GET /static/lib/fontawesome5.8/css/all.min.css HTTP/1.1" 200 55111
+[11/May/2019 03:36:11] "GET /static/lib/fonts.css HTTP/1.1" 200 6781
+[11/May/2019 03:36:11] "GET /static/lib/bootstrap-4.1.3/js/bootstrap.bundle.min.js HTTP/1.1" 200 70966
+[11/May/2019 03:36:11] "GET /static/lib/jquery-3.2.1.js HTTP/1.1" 200 86658
+[11/May/2019 03:36:11] "GET /static/lib/bootstrap-4.1.3/css/bootstrap.min.css HTTP/1.1" 200 140936
+[11/May/2019 03:36:12] "GET /static/lib/fontawesome5.8/js/all.min.js HTTP/1.1" 200 1123785
+[11/May/2019 03:36:12] "GET /static/images/x.jpg HTTP/1.1" 200 491057
+[11/May/2019 03:36:12] "POST /getMapInfoByDiseaseCategory HTTP/1.1" 200 734
+[11/May/2019 03:36:13] "GET /static/lib/fontawesome5.8/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 74256
+[11/May/2019 03:36:43] "GET /map/5c8bf53ea05a37a5c7d707ce HTTP/1.1" 301 0
+[11/May/2019 03:36:43] "GET /map/5c8bf53ea05a37a5c7d707ce/ HTTP/1.1" 200 109027
+[11/May/2019 03:36:43] "GET /static/lib/d3.v4.js HTTP/1.1" 200 221957
+[11/May/2019 03:36:43] "GET /static/lib/d3-hsv.v0.1.min.js HTTP/1.1" 200 2045
+[11/May/2019 03:36:43] "GET /static/lib/jquery-ui-slider-pips/jquery-ui-slider-pips.min.js HTTP/1.1" 200 6645
+[11/May/2019 03:36:43] "GET /static/lib/d3-scale-chromatic.v1.min.js HTTP/1.1" 200 18941
+[11/May/2019 03:36:43] "GET /static/lib/jquery-ui-slider-pips/jquery-ui-slider-pips.min.css HTTP/1.1" 200 6432
+[11/May/2019 03:36:43] "GET /static/lib/jquery-ui-1.12.1.flick/jquery-ui.theme.min.css HTTP/1.1" 200 14093
+[11/May/2019 03:36:43] "GET /static/lib/jquery-ui-1.12.1.flick/jquery-ui.min.css HTTP/1.1" 200 31185
+[11/May/2019 03:36:43] "GET /static/lib/jquery-ui-1.12.1.flick/jquery-ui.min.js HTTP/1.1" 200 253668
+[11/May/2019 03:36:43] "GET /static/lib/selectize/css/selectize.css HTTP/1.1" 200 8589
+[11/May/2019 03:36:43] "GET /static/lib/bgrins-spectrum/spectrum.css HTTP/1.1" 200 14921
+[11/May/2019 03:36:43] "GET /static/css/components.css HTTP/1.1" 200 880
+[11/May/2019 03:36:43] "GET /static/lib/DataTables/datatables.min.css HTTP/1.1" 200 35722
+[11/May/2019 03:36:43] "GET /static/lib/selectize/js/standalone/selectize.min.js HTTP/1.1" 200 45139
+[11/May/2019 03:36:43] "GET /static/lib/slideReveal/jquery.slidereveal.min.js HTTP/1.1" 200 2780
+[11/May/2019 03:36:43] "GET /static/lib/bgrins-spectrum/spectrum.js HTTP/1.1" 200 79270
+[11/May/2019 03:36:44] "GET /static/lib/download.js HTTP/1.1" 200 5839
+[11/May/2019 03:36:44] "GET /static/js/lasso.js HTTP/1.1" 200 2991
+[11/May/2019 03:36:44] "GET /static/lib/DataTables/datatables.min.js HTTP/1.1" 200 2178674
+[11/May/2019 03:36:45] "POST /getMapDataByMapId HTTP/1.1" 200 725665
+[11/May/2019 03:36:45] "POST /getClstrsByTypeAndMapid HTTP/1.1" 200 56738
+[11/May/2019 03:36:50] "POST /getMapInfoByDiseaseCategory HTTP/1.1" 200 734
+[11/May/2019 03:51:19] "GET / HTTP/1.1" 200 6865
+[11/May/2019 03:51:19] "POST /getMapInfoByDiseaseCategory HTTP/1.1" 200 734
+[11/May/2019 03:51:19] "GET /static/images/x.jpg HTTP/1.1" 200 491057

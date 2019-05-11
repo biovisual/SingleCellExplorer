@@ -30,10 +30,9 @@ client = MongoClient('localhost');
 
 databaseName="scDB"
 
-
-
 db = client[databaseName];
 
+print("load service");
 
 
 def loginVerify(username,password):
@@ -446,7 +445,7 @@ def contrastCellsVsClstr(sampleid,cells,clstr,contrastId):
 	cell2 = getClusterCellsById(clstr);
 	cell1= np.array(cells,dtype='i');
 	data = contrast(sampleid,cell1,cell2);
-	db2=MongoClient('localhost')[databaseName];
+	db2=pymongo.MongoClient('localhost')[databaseName];
 	db2.contrastResult.update_one({"_id":contrastId},{"$set":{"p":data["p"],"n":data["n"],"done":True} })
 
 	return "";
@@ -668,7 +667,7 @@ def doContrast(sampleid,cells,clstr,contrastModel):
 
 def contrastwithrest(sampleid,cells,contrastId):	
 	#db.contrastResult.insert_one()
-	db2=MongoClient('localhost')[databaseName];
+	db2=pymongo.MongoClient('localhost')[databaseName];
 
 	#cells=np.array(cells,dtype="i");
 	cellsdict= dict();
@@ -682,7 +681,7 @@ def contrastwithrest(sampleid,cells,contrastId):
 	p=dict();
 	n=dict();
 
-	allexpr = db["expr_"+sampleid].find({},{"_id":1,"normalize":1});
+	allexpr = db2["expr_"+sampleid].find({},{"_id":1,"normalize":1});
 	for i in allexpr:
 		g = i["_id"];
 		expr = i["normalize"];

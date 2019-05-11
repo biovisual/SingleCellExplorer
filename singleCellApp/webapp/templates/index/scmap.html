@@ -51,9 +51,7 @@
 				<div style='width: 66%;' >
 						<div class='col-12 h-100'>
 							<div class='h-100' id='mainpanel'>
-									 
-									
-
+							
 							</div>
 						</div>
 
@@ -62,9 +60,9 @@
 						 
 				</div>
 
-				<div style='width: 33%;'>
-						<div class='h-100' style="margin-right: 8px;">
-							<div class='h-100' id='infopanel'	style="overflow-y: auto;">
+				<div style='width: 33%;overflow-y: hidden;'>
+						<div class='h-100' style="margin-right: 8px;overflow-y: hidden;">
+							<div class='h-100' id='infopanel'	style="overflow-y: hidden;">
 									
 
 							</div>
@@ -1929,7 +1927,7 @@
 		function renderGeneSearchAllclstrBarPlot(clstrType,gene){
 			var plotdiv_id = "#barsvgdiv" ;
 			loading.loadingDivStart($(plotdiv_id))
-
+			//$(plotdiv_id).html("loading")
 			$.ajax({
 
 				url:"/getGeneSearchPlotDataByclstrType",
@@ -2055,7 +2053,7 @@
 		}
 
 		function renderGenesearchPlot(div,gene){
-			div.html("<div name='barsvgselection'></div><div id='barsvgdiv'></div>");
+			div.html("<div name='barsvgselection'></div><div id='barsvgdiv' style='min-height:340px;'></div>");
 			var selectstr="<select name='plotclstrselection' class='form-control-sm'>";
 			if( application.clstrTypes.includes("cellType")){
 				selectstr+="<option value='cellType'>cellType</option>";
@@ -2868,7 +2866,7 @@
 
 			genesearchpanel.find("[name='quicksearchgenes']").click(function(){
 
-				var tempgenes ="cd2 cd3d cd19 cd14 il7r ccr7 lyz cd1c fcer1a cst3 ppbp cdh17 csf1r ctgf trem1 muc13 pigr s100a4 dcn cd68 c1s foxp3 mme ms4a1 f13a1 tpsab1 ms4a7 clu bank1 cd4  ms4a6a gnly csf3r vwf lum fgf23 c5ar1 lcn2 spink4 krt8  acta2 fcgr3a mzb1 cd8a c1r epcam ncam1 ceacam1 tagln col1a2 spdef sele cdhr2 c1qb thy1 fcn1 krt18 c1qa bgn";
+				var tempgenes ="cd1c mgp cd3d cdh17 csf1r ctgf trem1 cd19 muc13 pigr ak3 cd40lg dcn cd68 fcer1a c1s cd33 cd14 hck foxp3 mme ms4a1 ceacam5 f13a1 serpinh1 tpsab1 ms4a7 clu bank1 cd4 cyr61 ms4a6a gnly csf3r clec4e serpine1 clec7a il1b dmbt1 vwf lum fgf23 c5ar1 lcn2 irak3 cd28 sparc cd96 spink4 krt8 cd3g acta2 ccr7 vil1 fcgr3a mzb1 olfm4 xpnpep2 cd8a c1r cd247 epcam ncam1 ceacam1 tagln col1a2 spdef sele alpi stab1 cdhr2 cd2 c1qb thy1 fcn1 krt18 c1qa cd3e bgn";
 
 				tempgenes = tempgenes.toUpperCase().replace(/ /g,"\n")
 
