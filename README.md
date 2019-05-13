@@ -1,4 +1,4 @@
-### SingleCellExplorer 
+# SingleCellExplorer 
 Thank you for visiting wiki of Single Cell Explorer. We hope our python/js stack will facilitate the collaboration between computational and experimental biologists to better use single cell sequencing data. 
 
 ### Site URL: 
@@ -8,7 +8,7 @@ http://54.159.6.229:8002/
 http://54.159.6.229:8001/
 
 
-#  Web applicaton with Python Notebook and MongoDB integration
+### Web applicaton with Python Notebook and MongoDB integration
 
 #The software requires Python 3.5 or above Ubuntu 18.04 (and above) 
 
