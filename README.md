@@ -8,8 +8,9 @@ http://54.159.6.229:8002/
 http://54.159.6.229:8001/
 
 
-### Web applicaton with Python Notebook and MongoDB integration
-# The software requires Python 3.5 or above Ubuntu 18.04 (and above) 
+#  Web applicaton with Python Notebook and MongoDB integration
+
+#The software requires Python 3.5 or above Ubuntu 18.04 (and above) 
 
 sudo apt-get update
 
