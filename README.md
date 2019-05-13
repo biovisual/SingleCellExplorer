@@ -62,7 +62,7 @@ cd singleCellApp
 
 gunicorn singleCell.wsgi:application -b 0.0.0.0:8000
 
-### Lib for analysis in python notebook  
+### Libraries for analysis in python notebook  
 
 sudo apt-get install python3 python-dev python3-dev build-essential libssl-dev libffi-dev libxml2-dev libxslt1-dev zlib1g-dev 
 
