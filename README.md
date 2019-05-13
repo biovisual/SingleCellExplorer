@@ -7,9 +7,9 @@ http://54.159.6.229:8002/
 ### Notebook URL: 
 http://54.159.6.229:8001/
 
-### Web applicaton with Python Notebook and MongoDB integration
 
-### The software requires Python 3.5 or above Ubuntu 18.04 (and above) 
+### Web applicaton with Python Notebook and MongoDB integration
+# The software requires Python 3.5 or above Ubuntu 18.04 (and above) 
 
 sudo apt-get update
 
@@ -18,12 +18,6 @@ sudo apt install python3
 sudo apt install python3-pip
 
 pip3 install Django
-
-### computational env and python notebook 
-
-sudo apt-get install python3 python-dev python3-dev build-essential libssl-dev libffi-dev libxml2-dev libxslt1-dev zlib1g-dev 
-
-pip3 install --user leidenalg
 
 ### install and start mongodb
 
@@ -66,4 +60,10 @@ pip3 install -r req.txt
 cd singleCellApp
 
 gunicorn singleCell.wsgi:application -b 0.0.0.0:8000
+
+### env for python notebook  
+
+sudo apt-get install python3 python-dev python3-dev build-essential libssl-dev libffi-dev libxml2-dev libxslt1-dev zlib1g-dev 
+
+pip3 install --user leidenalg
 
