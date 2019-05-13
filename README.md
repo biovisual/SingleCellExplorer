@@ -1,4 +1,4 @@
-# SingleCellExplorer 
+# Single Cell Explorer 
 Thank you for visiting wiki of Single Cell Explorer. We hope our python/js stack will facilitate the collaboration between computational and experimental biologists to better use single cell sequencing data. 
 
 ### Site URL: 
@@ -20,7 +20,7 @@ sudo apt install python3-pip
 
 pip3 install Django
 
-### install and start mongodb
+### Install and start mongodb
 
 curl -O https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.6.12.tgz
 
@@ -30,7 +30,7 @@ mkdir -p mongodb
 
 mv mongodb-linux-x86_64-3.6.12/ mongodb
 
-### create database 
+### Create database 
 
 mkdir mongodb/scdb
 
@@ -38,7 +38,7 @@ mkdir mongodb/log
 
 sudo mongodb/mongodb-linux-x86_64-3.6.12/bin/mongod --dbpath "mongodb/scdb" --nssize 2000 --port 27017 --fork --logpath "mongodb/log/scdb.log"
 
-### restore database using example mongodb files
+### Restore database using example mongodb files
 
 mkdir dumpfiles
 
@@ -48,21 +48,21 @@ mv scDB dumpfiles
 
 mongodb/mongodb-linux-x86_64-3.6.12/bin/mongorestore dumpfiles
 
-### connect mongodb
+### Connect mongodb
 
 mongodb/mongodb-linux-x86_64-3.6.12/bin/mongo
 
-### install dependencies for application
+### Install dependencies for application
 
 pip3 install -r req.txt
 
-### start django web application
+### Start django web application
 
 cd singleCellApp
 
 gunicorn singleCell.wsgi:application -b 0.0.0.0:8000
 
-### env for python notebook  
+### Lib for analysis in python notebook  
 
 sudo apt-get install python3 python-dev python3-dev build-essential libssl-dev libffi-dev libxml2-dev libxslt1-dev zlib1g-dev 
 
