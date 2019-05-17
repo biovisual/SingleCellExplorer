@@ -1,5 +1,6 @@
 # Single Cell Explorer 
 Thank you for visiting wiki of Single Cell Explorer. We hope our python/js stack will facilitate the collaboration between computational and experimental biologists to better use single cell sequencing data. 
+Contact: di_feng@yahoo.com
 
 ### Site URL: 
 http://54.159.6.229:8002/
