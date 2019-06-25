@@ -12,5 +12,7 @@ python-igraph
 louvain
 leidenalg
 ipython
+torchvision
+django==2.2
 
 
